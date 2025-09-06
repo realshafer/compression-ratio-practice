@@ -3,10 +3,10 @@ let playButton, stopButton, answerButton;
 let player, fileName, fSize;
 
 function preload() {
-  sound1 = loadSound('assets/DrumHall.mp3');
-  sound2 = loadSound('assets/DrumAlgo.mp3');
-  sound3 = loadSound('assets/DrumSpring.mp3');
-  sound4 = loadSound('assets/DrumPlate.mp3');
+  sound1 = loadSound('assets/Drums_1-1.wav');
+  sound2 = loadSound('assets/Drums_1.5-1.wav');
+  sound3 = loadSound('assets/Drums_5-1.wav');
+  sound4 = loadSound('assets/Drums_20-1.wav');
   sound5 = loadSound('assets/VoxHall.mp3');
   sound6 = loadSound('assets/VoxAlgo.mp3');
   sound7 = loadSound('assets/VoxSpring.mp3');
@@ -24,13 +24,13 @@ function setup(){
   // Title
   let titleSize = fSize / 2;
   textSize(titleSize);
-  text("Reverb Type Practice", width / 2, height / 9);
+  text("Compression Ratio Practice", width / 2, height / 9);
 
   // Subtitle
   let subtitleSize = fSize / 4;
   textSize(subtitleSize);
   let lineSpacing = subtitleSize * 1.5; // spacing between title and subtitle
-  text("Natural, Spring, Plate, or Algorithmic", width / 2, height / 9 + lineSpacing);
+  text("1:1, 1.5:1, 5:1, 20:1", width / 2, height / 9 + lineSpacing);
 
   // choose first random sound
   chooseSound();
@@ -105,13 +105,13 @@ function chooseSound() {
 
   // assign player and fileName
   if (choice === 0) {
-    player = sound1; fileName = "Natural Hall Reverb";
+    player = sound1; fileName = "1:1";
   } else if (choice === 1) {
-    player = sound2; fileName = "Digital Algorithmic Reverb";
+    player = sound2; fileName = "1.5:1";
   } else if (choice === 2) {
-    player = sound3; fileName = "Spring Reverb";
+    player = sound3; fileName = "5:1";
   } else if (choice === 3) {
-    player = sound4; fileName = "Plate Reverb";
+    player = sound4; fileName = "20:1";
   } else if (choice === 4) {
     player = sound5; fileName = "Natural Hall Reverb";
   } else if (choice === 5) {
