@@ -7,10 +7,10 @@ function preload() {
   sound2 = loadSound('assets/Drums_1.5-1.wav');
   sound3 = loadSound('assets/Drums_5-1.wav');
   sound4 = loadSound('assets/Drums_20-1.wav');
-  sound5 = loadSound('assets/VoxHall.mp3');
-  sound6 = loadSound('assets/VoxAlgo.mp3');
-  sound7 = loadSound('assets/VoxSpring.mp3');
-  sound8 = loadSound('assets/VoxPlate.mp3');
+  sound5 = loadSound('assets/Vox_1-1.wav');
+  sound6 = loadSound('assets/Vox_1.5-1.wav');
+  sound7 = loadSound('assets/Vox_5-1.wav');
+  sound8 = loadSound('assets/Vox_20-1.wav');
 }
 
 function setup(){  
@@ -113,13 +113,13 @@ function chooseSound() {
   } else if (choice === 3) {
     player = sound4; fileName = "20:1";
   } else if (choice === 4) {
-    player = sound5; fileName = "Natural Hall Reverb";
+    player = sound5; fileName = "1:1";
   } else if (choice === 5) {
-    player = sound6; fileName = "Digital Algorithmic Reverb";
+    player = sound6; fileName = "1.5:1";
   } else if (choice === 6) {
-    player = sound7; fileName = "Spring Reverb";
+    player = sound7; fileName = "5:1";
   } else {
-    player = sound8; fileName = "Plate Reverb";
+    player = sound8; fileName = "20:1";
   }
 }
 
